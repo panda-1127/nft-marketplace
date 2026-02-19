@@ -14,7 +14,7 @@ interface NFTGridProps {
 const NFTGrid: React.FC<NFTGridProps> = ({ items, isLoading, onBuy, onCancel, onBid, userAccount }) => {
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
         {[...Array(8)].map((_, i) => (
           <div key={i} className="space-y-6">
             <Skeleton className="aspect-square w-full rounded-[2.5rem]" />
